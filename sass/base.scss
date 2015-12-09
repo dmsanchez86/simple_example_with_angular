@@ -1,0 +1,46 @@
+@import "variables";
+@import "functions";
+
+.container_item{
+    margin: 1rem 0;
+    
+    iframe{
+        min-height: 410px;
+        width: calc(100% - 2rem);
+        display: block;
+        margin: 1rem;
+        border: none;
+        @include transition(all .5s ease);
+    }
+    
+    .collapsible-header{
+        cursor: pointer;
+    }
+    
+    .collapsible-body{
+        padding: 1rem 0 0 0;
+    }
+}
+
+.button_share{
+    width: calc(100% - 2rem);
+    margin: .15rem 1rem 1rem;
+    @include flex(flex);
+    
+    > button{
+        @include flex-item(1);
+        
+        &:nth-child(2){
+            margin: 0 .15rem;
+        }
+    }
+}
+
+.id,
+.category,
+.state{
+    width: calc(100% - 2rem);
+    margin: .05rem 1rem;
+}
+
+@import 'queries';

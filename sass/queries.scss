@@ -1,0 +1,44 @@
+@media (max-width: 800px){
+    .container_item{
+        margin: 1rem 0;
+        
+        iframe{
+            min-height: 340px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .container_item{
+        margin: 1rem 0;
+        
+        iframe{
+            min-height: 290px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .button_share{
+        display: block;
+        
+        > button{
+            display: block;
+            width: 100%;
+            
+            &:nth-child(2){
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .container_item{
+        margin: 1rem 0;
+        
+        iframe{
+            min-height: 190px;
+        }
+    }
+}
