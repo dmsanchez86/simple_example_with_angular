@@ -1,0 +1,29 @@
+<div ng-repeat="item in datos" class="container_item">
+    <ul class="collapsible popout" data-collapsible="accordion">
+        <li ng-repeat="i in item" data-id="{{ i.id }}">
+          <div class="collapsible-header">{{i.Titulo}}</div>
+          <div class="collapsible-body">
+              <div class="id">
+                  <b>Id: </b>{{ i.id }}
+              </div>
+              <div class="category">
+                  <b>Categoria: </b>{{ i.categoria }}
+              </div>
+              <div class="state">
+                  <b>Estado: </b>{{ i.estado }}
+              </div>
+              <div class="link_video" style="display:none">
+                  <b>Url: </b><a href="{{ i.url }}">i.url</a>
+              </div>
+              <div class="content_video">
+                  <iframe data-url='{{ i.url }}'></iframe>
+              </div>
+              <div class="button_share">
+                  <button class="btn waves-effect waves-light red darken-1" type="submit" name="action">SMS</button>
+                  <button class="btn waves-effect waves-light green darken-1" type="submit" name="action">E-MAIL</button>
+                  <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">COMPARTIR</button>
+              </div>
+          </div>
+        </li>
+    </ul>
+</div>
