@@ -1,7 +1,6 @@
 @import "variables";
 @import "functions";
 
-<<<<<<< HEAD
 *{
     border: 0;
     margin: 0;
@@ -20,8 +19,6 @@ html{
     background: #2A4C4E;
 }
 
-=======
->>>>>>> 0b7f304b6cd5f28fd857b2c21187cc47f6a09a82
 .container_item{
     margin: 1rem 0;
     
@@ -64,7 +61,6 @@ html{
     margin: .05rem 1rem;
 }
 
-<<<<<<< HEAD
 #nav-mobile {
     @include flex(flex);
     
@@ -95,6 +91,4 @@ nav{
     line-height: 1;
 }
 
-=======
->>>>>>> 0b7f304b6cd5f28fd857b2c21187cc47f6a09a82
 @import 'queries';
